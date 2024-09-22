@@ -1,0 +1,13 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.container {
+	width: 90%;
+	border: black 1px solid;
+
+	display: grid;
+	grid-template-columns: 50% 1fr;
+}
