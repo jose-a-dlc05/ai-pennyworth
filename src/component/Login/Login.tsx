@@ -13,7 +13,9 @@ const Login = () => {
 					<label htmlFor='password'>Password</label>
 					<input type='password' />
 				</div>
-				<button type='submit'>Submit</button>
+				<button type='submit' className='submit-btn'>
+					Submit
+				</button>
 				<p className='sign-up-tag'>
 					Don't have an account? <a href='#'>Sign up</a>
 				</p>
