@@ -1,9 +1,14 @@
 import './Form.css';
+import Login from '../component/Login/Login';
 const Form = () => {
 	return (
 		<>
-			<div className='form'>Form</div>
-			<div className='form-img'>Img</div>
+			<form className='form'>
+				<Login />
+			</form>
+			<div className='form-img'>
+				<img src='sign-in.jpg' alt='teenager with VR headset' />
+			</div>
 		</>
 	);
 };
