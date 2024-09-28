@@ -1,10 +1,11 @@
-.sign-in-img {
+.sign-up-img {
 	display: block;
 	padding: 2rem 2rem;
 	width: 40%;
 	height: 85vh;
 	object-fit: cover;
-	object-position: 0% 38%;
+	object-position: 50% 38%;
+	transform: scaleX(-1);
 }
 
 .submit-btn {
@@ -17,7 +18,7 @@
 	border: none;
 }
 
-.sign-up-tag {
+.sign-in-tag {
 	text-align: center;
 	font-size: 90%;
 
@@ -28,7 +29,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.sign-in-img {
+	.sign-up-img {
 		display: none;
 	}
 }

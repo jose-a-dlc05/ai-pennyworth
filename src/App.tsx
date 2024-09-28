@@ -1,11 +1,12 @@
 import './App.css';
-import Form from './section/Form';
+import Login from './component/Login/Login';
+import Signup from './component/Signup/Signup';
 
 function App() {
 	return (
 		<>
 			<div className='container'>
-				<Form />
+				<Signup />
 			</div>
 		</>
 	);
