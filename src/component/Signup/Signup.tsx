@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Login.css';
+import './Signup.css';
 import { Button, Card, Flex, Typography, Form, Input } from 'antd';
 
 const cardStyle: React.CSSProperties = {
@@ -10,7 +10,7 @@ const inputStyle: React.CSSProperties = {
 	width: '100%',
 };
 
-const Login = () => {
+const Signup = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -40,9 +40,7 @@ const Login = () => {
 						style={{ padding: 0, width: isMobile ? '100%' : '40%' }}
 					>
 						<Form style={{ width: '50%' }}>
-							<Typography.Title level={3}>
-								Log in to your account
-							</Typography.Title>
+							<Typography.Title level={3}>Create your account</Typography.Title>
 							<Form.Item
 								label='Email'
 								name='email'
@@ -62,17 +60,17 @@ const Login = () => {
 							</Form.Item>
 							<br />
 							<Button type='primary' htmlType='submit' className='submit-btn'>
-								Submit
+								Create Account
 							</Button>
 						</Form>
-						<p className='sign-up-tag'>
-							Don't have an account? <a href='#'>Sign up</a>
+						<p className='sign-in-tag'>
+							Already have an account? <a href='#'>Sign in</a>
 						</p>
 					</Flex>
 					<img
-						className='sign-in-img'
-						src='sign-in.jpg'
-						alt='teenager with VR headset'
+						className='sign-up-img'
+						src='sign-up.jpg'
+						alt='woman looking up'
 					/>
 				</Flex>
 			</Card>
@@ -80,4 +78,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default Signup;
